@@ -79,5 +79,8 @@ def testingNB():
     thisDoc = array(bagOfWords2VecMN(myVocabList, testEntry))
     print testEntry,'classified as: ',classifyNB(thisDoc,p0V,p1V,pAb)
 
-if __name__ == '__main__':
+def main():
     testingNB()
+    
+if __name__ == '__main__':
+    main()

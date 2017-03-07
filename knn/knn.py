@@ -23,7 +23,10 @@ def kNN(inX,dataSet,labels,k):
     sortedClassCount = sorted(classCount.iteritems(),key=operator.itemgetter(1),reverse=True)
     return sortedClassCount[0][0]
 
-if __name__ == '__main__':
+def main():
     intX = [0,0]
     group,labels = createDataSet()
     print(kNN(intX,group,labels,2))
+    
+if __name__ == '__main__':
+    main()

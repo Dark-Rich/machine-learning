@@ -28,6 +28,9 @@ def pca(dataMat,topNfeat=9999999):
 	reconMat = (lowDataMat * redEigVects.T) + meanVal
 	return lowDataMat,reconMat
 
-if __name__ == '__main__':
+def main():
 	dataSet = replaceNanWithMean()
 	pca(dataSet)
+
+if __name__ == '__main__':
+	main()
